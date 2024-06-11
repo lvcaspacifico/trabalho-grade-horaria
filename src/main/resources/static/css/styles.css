@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .window{
+    display: flex;
+    height: 100vh;
+  }
+
+  .sidebar {
+    flex: 1;
+    height: 100%;
+    background-color: #1f9b00;
+    position: sticky;
+    top: 0;
+  }
+
+  .menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 40px 30px 30px;
+    color: #fff;
+    margin: 0px;
+  }
+
+  .menu hr {
+    border: none; /* Remove a borda padrão */
+    border-top: 1px solid white; /* Adiciona uma nova borda na parte superior para criar a linha */
+  }
+
+
+  .menu li {
+    list-style: none;
+    width: 100%;
+    padding: 5px 0px 5px 0px; /* Ajuste da margem superior e inferior para centralizar */
+  }
+
+  .menu li:first-child{
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .menu a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .menu a:hove {
+    background-color: #1f9b00;
+  }
+
+  .menu li a i {
+    width: 20px;
+    margin-right: 10px;
+  }
+
+  .main-content{
+    flex: 5;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    color: rgb(12, 12, 12);
+    overflow-y: auto;
+  }
+
+  .content{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin: 0px;
+  }
+
+  #pagina-atual{
+    font-size: 22px;
+    padding-bottom: 7px;
+    margin-bottom: 21px;
+    font-weight: bold;
+  }
+
+  .content hr {
+    border: none;
+    border-top: 1px solid rgb(0, 0, 0);
+    width: 100%;
+    margin-top: 0px;
+  }
+
+  thead {
+    background-color: black;
+    color: white;
+  }
+
+
+  #input-01{
+    width: 40%;
+  }
+
+  .form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 10px 0px;
+  }
+
+  #form-btn-options{
+    margin: 0px 10px 0px 0px;
+    margin-bottom: 10px;
+    width: 9%;
+  }
+
+  .btn {
+    align-self: flex-end;
+    margin-bottom: 10px;
+    width: 10%;
+  }
+
+  .input-fields {
+    width: 60%
+ }
+
+#user-pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    margin-top: 20px;
+    margin-left: 5px;
+ }
+
+ #user-infos{
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 0;
+ }
+
+.user-infos-div{
+    display: flex;
+    flex-direction: row;
+}
+
+#nome-do-usuario{
+    margin-top: 25px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    padding: 0;
+}
+
+#cargo-do-usuario{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 0;
+}
+
+#no-action-link {
+ color: grey;
+}
+

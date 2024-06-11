@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horários</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+<div class="window">
+
+  <div class="sidebar">
+    <div class="user-infos-div" id="user-infos">
+      <img id="user-pic" src="/img/user.jpg"/>
+      <ul class="menu" id="user-infos">
+        <li id="nome-do-usuario"><a href="/inicio">Pepe Froggandalf</a></li>
+        <li id="cargo-do-usuario"><a href="/inicio">Administrador</a></li>
+      </ul>
+    </div>
+    <ul class="menu" id="user-infos">
+      <li><hr></li>
+      <li><a href="/inicio/cursos"><i class="fas fa-book"></i>Cursos</a></li>
+      <li><a href="/inicio/professores"><i class="fas fa-chalkboard-teacher"></i>Professores</a></li>
+      <li><a href="/inicio/disciplinas"><i class="fas fa-book-open"></i>Disciplinas</a></li>
+      <li><a href="/inicio/salas"><i class="fas fa-door-open"></i>Salas</a></li>
+      <li><a href="/inicio/turmas"><i class="fas fa-calendar"></i>Turmas</a></li>
+      <li><a href="/inicio/dias-da-semana"><i class="fas fa-calendar"></i>Dias da Semana</a></li>
+      <li><a href="/inicio/periodos"><i class="fas fa-calendar"></i>Períodos</a></li>
+      <li><a href="/inicio/horarios"><i class="fas fa-clock"></i>Horários</a></li>
+      <li><a href="/inicio/grades-horarias"><i class="fas fa-clock"></i>Grades Horárias</a></li>
+      <li><a href="/inicio/sair"><i class="fas fa-sign-out-alt"></i>Sair</a></li>
+    </ul>
+  </div>
+
+
+
+  <div class="main-content">
+
+    <div class="content">
+      <h1 id="pagina-atual">Horários</h1>
+      <hr>
+
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/inicio">Início</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Horários</li>
+        </ol>
+      </nav>
+
+      <hr>
+      <button type="button" class="btn btn-primary" onclick="window.location.href='/inicio/horarios/novo-horario'">Novo</button>
+
+      <table  class="table table-striped">
+        <thead id="table" class="thead-dark">
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Data</th>
+            <th scope="col">Turma</th>
+            <th scope="col">Dia da Semana</th>
+            <th scope="col">Período</th>
+            <th scope="col">Disciplina</th>
+            <th scope="col">Professor</th>
+            <th scope="col">Sala</th>
+            <th scope="col">Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr th:each="horario : ${horarios}">
+          <td th:text="${horario.id}"></td>
+          <td th:text="${horario.data}"></td>
+          <td th:text="${horario.turma != null} ? ${horario.turma.codTurma} : '[EMPTY]'"></td>
+          <td th:text="${horario.diaDaSemana.nome}"></td>
+          <td th:text="${horario.periodo.descricao}"></td>
+          <td th:text="${horario.disciplina != null} ? ${horario.disciplina.nome} : '[EMPTY]'"></td>
+          <td th:text="${horario.professor != null} ? ${horario.professor.nome} : '[EMPTY]'"></td>
+          <td th:text="${horario.sala.codigoDaSala}"></td>
+          <td><a th:href="@{/inicio/horarios/{id}(id=${horario.id})}">Visualizar</a></td>
+        </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+
+
+</div>
+</body>
+
+</html>
