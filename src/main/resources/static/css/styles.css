@@ -154,4 +154,35 @@ body {
 #no-action-link {
  color: grey;
 }
+#painel-dashboard{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
+.painel-dashboard-info-block{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 8px;
+  background-color: aqua;
+  width: 24%;
+  height: 75vh;
+  font-size: 30px;
+  color: white;
+  padding: 2% 0 1% 2%;
+  font-weight: bolder;
+}
+
+#info-01{
+  background-color: #eaa623;
+}
+#info-02{
+  background-color: #4185eb;
+}
+#info-03{
+  background-color: #e24256;
+}
+#info-04{
+  background-color: #20eda2;
+}

@@ -12,4 +12,8 @@ public interface TurmaRepository extends JpaRepository<Turma, Long> {
     @Transactional
     @Query("UPDATE Turma t SET t.curso = null WHERE t.curso.id = :cursoId")
     void dissociateTurmasFromCurso(@Param("cursoId") Long cursoId);
+
+
+    @Override
+    long count();
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -49,11 +49,18 @@
           <li class="breadcrumb-item active" aria-current="page">Início</li>
         </ol>
       </nav>
+      <hr>
+      <div id="painel-dashboard">
+        <div class="painel-dashboard-info-block" id="info-01"><p>Professores</p><p th:text="${professores}"></p></div>
+        <div class="painel-dashboard-info-block" id="info-02"><p>Disciplinas</p><p th:text="${disciplinas}"></p></div>
+        <div class="painel-dashboard-info-block" id="info-03"><p>Turmas</p><p th:text="${turmas}"></p></div>
+        <div class="painel-dashboard-info-block" id="info-04"><p>Salas</p><p th:text="${salas}"></p></div>
+      </div>
 
 
     </div>
   </div>
-  
+
 
 </div>
 </body>

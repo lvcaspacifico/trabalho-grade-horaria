@@ -12,4 +12,7 @@ public interface DisciplinaRepository extends JpaRepository<Disciplina, Long> {
     @Transactional
     @Query("UPDATE Disciplina d SET d.professor = null WHERE d.professor.id = :professorId")
     void dissociateDisciplinaFromProfessor(@Param("professorId") Long cursoId);
+
+    @Override
+    long count();
 }
