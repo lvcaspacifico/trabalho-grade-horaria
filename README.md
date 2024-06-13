@@ -1,9 +1,9 @@
 
 # Trabalho Final | Programação Orientada à Objetos II | 2024-01
 
-Trabalho proposto na disciplina de Programação Orientada à Objetos II - 2024-01.
+Trabalho proposto na disciplina de Programação Orientada à Objetos II - 2024-01 no curso Bacharelado em Engenharia de Software.
 
-## Requisitos
+## Requisitos 📝
 
 !["imagem enviada semanalmente"](https://i.ibb.co/wYPQYtR/image.png)
 
@@ -11,14 +11,14 @@ Trabalho proposto na disciplina de Programação Orientada à Objetos II - 2024-
 - Desenvolver as páginas, com os respectivos CRUDs de cada entidade, e apresentar uma visualização da Grade Horária com as informações completas. O formato deve ser similar à Grade Horária semanal enviada para os alunos via email
 - Integrar frontend com backend
 
-## Tecnologias Utilizadas
+## Tecnologias Utilizadas 📦
 
 - Spring Boot
 - Banco de dados H2
 - Bootstrap 4.5
 - Arquitetura MVC
 
-## Autores
+## Autores 👥
 
 - Lucas Pacífico | [@lvcaspacifico](https://github.com/lvcaspacifico/)
 - Marcelo Fiedler | [@MarceloAFiedler](https://github.com/MarceloAFiedler)
