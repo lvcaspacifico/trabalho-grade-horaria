@@ -7,9 +7,16 @@ Trabalho proposto na disciplina de Programação Orientada à Objetos II - 2024-
 
 !["imagem enviada semanalmente"](https://i.ibb.co/wYPQYtR/image.png)
 
+- Desenvolver as entidades
+- Desenvolver os repositories
+- Inserir os dados
+- Consultar os dados
+- Diagrama de classes da UML
+- Interfaces gráficas via web
 
-- Desenvolver as páginas, com os respectivos CRUDs de cada entidade, e apresentar uma visualização da Grade Horária com as informações completas. O formato deve ser similar à Grade Horária semanal enviada para os alunos via email
-- Integrar frontend com backend
+## Diagrama UML 📌
+
+!["diagrama de classes com os pacotes"](https://i.ibb.co/Y3DD8Sr/imagem.jpg)
 
 ## Tecnologias Utilizadas 📦
 
