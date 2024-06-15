@@ -1,7 +1,8 @@
 
 # Trabalho Final | Programação Orientada à Objetos II | 2024-01
+## Grade Horária Web App
 
-Trabalho proposto na disciplina de Programação Orientada à Objetos II - 2024-01 no curso Bacharelado em Engenharia de Software.
+Projeto criado para a disciplina de Programação Orientada à Objetos II - 2024-01 no curso Bacharelado em Engenharia de Software da Univille em maio de 2024.
 
 ## Requisitos 📝
 
